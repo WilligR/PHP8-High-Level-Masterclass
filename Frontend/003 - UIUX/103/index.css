@@ -1,0 +1,10 @@
+@font-face {
+    font-family: 'MadimiOne';
+    src: url('./MadimiOne-Regular.ttf') format('truetype');
+}
+
+body {
+    font-family: MadimiOne, sans-serif;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
