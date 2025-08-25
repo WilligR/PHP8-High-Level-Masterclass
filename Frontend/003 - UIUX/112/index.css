@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 1em;
+    font-family: sans-serif;
+}
+
+body {
+    background: rgb(3, 3, 66);
+    color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+    .form-container {
+        width: 30em;
+        padding: 3em;
+        border-radius: 2em;
+        background: #030342;
+        box-shadow: 32px 32px 64px #01011e, -32px -32px 64px #050566;
+
+        .text-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: baseline;
+            gap: 0.5em;
+            margin-bottom: 2em;
+
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 1em;
+
+            .input-container {
+                display: flex;
+                flex-direction: column;
+
+                label {
+                    display: none;
+                }
+
+                input {
+                    margin: 0.3em;
+                    padding: 1em;
+                    border-radius: 0.5em;
+                    border: none;
+                }
+
+                label {
+                    margin-left: 0.3em;
+                }
+            }
+
+            .btn-container {
+                margin-top: 2em;
+                display: flex;
+                flex-direction: column;
+                gap: 1em;
+
+                button, a {
+                    border-radius: 0.5em;
+                    padding: 1em;
+                    text-align: center;
+                    font-size: 1rem;
+
+                    &:hover {
+                        background: rgb(248, 202, 138);
+                    }
+                }
+
+                button {
+                    border: none;
+                    background: antiquewhite;
+                    box-shadow: 4px 4px 8px #010511;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 1em;
+                }
+
+                a {
+                    border: 2px solid antiquewhite;
+                    color: antiquewhite;
+
+                    &:hover {
+                        color: black;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
