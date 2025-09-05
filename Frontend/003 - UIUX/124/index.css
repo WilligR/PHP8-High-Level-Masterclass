@@ -1,0 +1,19 @@
+p {
+    font-weight: 600;
+    font-style: italic;
+    text-decoration: underline;
+    text-transform: capitalize;
+    text-shadow: 2px 2px 4px #ee2c2c;
+}
+
+button:before {
+    content: "<< ";
+    color: red;
+    font-weight: bold;
+}
+
+button:after {
+    content: " >>";
+    color: red;
+    font-weight: bold;
+}
