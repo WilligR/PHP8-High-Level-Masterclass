@@ -1,0 +1,85 @@
+@charset "UTF-8";
+/* Allgemeine Stile */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Kopfzeile */
+header {
+  background-color: #333;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 10px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+/* Hauptbereich */
+main {
+  padding: 20px;
+}
+
+.introduction {
+  margin-bottom: 20px;
+}
+
+.portfolio-item {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.portfolio-item img {
+  max-width: 100%;
+  height: auto;
+  flex: 1 1 300px; /* Fluid-Sizing */
+  margin-right: 20px;
+}
+
+.portfolio-item p {
+  flex: 2 1 300px;
+}
+
+/* Fußzeile */
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+/* Mediaqueries für responsives Design */
+@media (max-width: 768px) {
+  .portfolio-item {
+    flex-direction: column;
+  }
+  .portfolio-item img,
+  .portfolio-item p {
+    margin-right: 0;
+  }
+  nav ul li {
+    display: block;
+    margin: 5px 0;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */
