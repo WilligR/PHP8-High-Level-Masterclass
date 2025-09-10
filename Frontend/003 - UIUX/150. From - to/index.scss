@@ -1,0 +1,26 @@
+.element {
+  width: 200px;
+  height: 200px;
+  background-color: red;
+  color: white;
+  border-radius: 20px;
+  animation-name: newAnimation;
+  animation-duration: 5s;
+  animation-iteration-count: 5;
+}
+
+h3 {
+  text-align: center;
+  padding-top: 5rem;
+}
+
+@keyframes newAnimation {
+  from {
+    width: 200px;
+    height: 200px;
+  }
+  to {
+    width: 400px;
+    height: 400px;
+  }
+}
