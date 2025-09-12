@@ -1,0 +1,75 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(20, 20, 20);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+body .cube,
+body .circle {
+  width: 6.25rem;
+  height: 6.25rem;
+}
+body .item-container {
+  display: flex;
+  gap: 1rem;
+  animation: rotateContainer 2s linear infinite;
+}
+body .item-container .cube {
+  background-color: lightblue;
+  animation: rotateCube 2s infinite;
+}
+body .item-container .circle {
+  background-color: lightgreen;
+  border-radius: 100%;
+  animation: circle 2s infinite;
+}
+
+@keyframes rotateContainer {
+  0% {
+    transform: rotate(0deg) scale(1);
+  }
+  40% {
+    transform: rotate(180deg) scale(1.5);
+  }
+  50% {
+    transform: rotate(180deg) scale(1.5);
+  }
+  80% {
+    transform: rotate(0deg) scale(1);
+  }
+}
+@keyframes rotateCube {
+  to {
+    transform: rotate(0deg);
+  }
+  from {
+    transform: rotate(360deg);
+  }
+}
+@keyframes circle {
+  0% {
+    background-color: lightgreen;
+    border-radius: 100%;
+  }
+  40% {
+    background-color: lightcoral;
+    border-radius: 10%;
+  }
+  50% {
+    background-color: lightcoral;
+    border-radius: 10%;
+  }
+  80% {
+    border-radius: 100%;
+    background-color: lightgreen;
+  }
+}
+
+/*# sourceMappingURL=index.css.map */
