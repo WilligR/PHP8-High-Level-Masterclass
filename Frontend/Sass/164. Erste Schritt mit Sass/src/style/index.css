@@ -1,0 +1,16 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: black;
+  color: white;
+}
+body div h1 {
+  color: lightblue;
+}
+body div h3 {
+  color: lightcoral;
+}
+body div p {
+  color: white;
+}
+
+/*# sourceMappingURL=index.css.map */
