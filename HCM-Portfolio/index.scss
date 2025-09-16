@@ -1,19 +1,17 @@
+$black: #041518;
+$white: #d4e8ec;
+$error: #c11721;
+$main: #22777f;
+$second1: #0f6171;
+$second2: #379495;
+$second3: #fbfcec;
+$accent: #bdd9c5;
+$realwhite: #fafafa;
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
-
-:root {
-  --black: #041518;
-  --white: #d4e8ec;
-  --error: #c11721;
-  --main: #22777f;
-  --second1: #0f6171;
-  --second2: #379495;
-  --second3: #fbfcec;
-  --accent: #bdd9c5;
-  --realwhite: #fafafa;
 }
 
 // Fonts
@@ -117,16 +115,15 @@ small {
     width: 60%;
   }
 }
+
 .container {
   width: 95%;
   padding: 0 1rem;
   margin: 0 auto;
   border: 3px solid red;
 }
+
 body {
-  font-family: 'Poppins-Regular', sans-serif;
-  line-height: 1.6;
-  background-color: #f4f4f4;
-  color: #333;
+  color: $black;
 }
 
