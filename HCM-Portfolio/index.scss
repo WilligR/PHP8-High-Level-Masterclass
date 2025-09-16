@@ -125,5 +125,13 @@ small {
 
 body {
   color: $black;
+
+  header {
+    nav {
+      svg {
+        fill: $black;
+      }
+    }
+  }
 }
 

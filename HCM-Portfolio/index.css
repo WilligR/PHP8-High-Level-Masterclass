@@ -104,5 +104,8 @@ small {
 body {
   color: #041518;
 }
+body header nav svg {
+  fill: #041518;
+}
 
 /*# sourceMappingURL=index.css.map */
