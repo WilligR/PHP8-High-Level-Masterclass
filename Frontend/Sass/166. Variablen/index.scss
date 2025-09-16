@@ -1,0 +1,70 @@
+//Variablen in Sass
+@import "variables";
+
+// Maps in Sass
+// Maps sind Sammlungen von Schlüssel-Wert-Paaren
+// Maps beginnen mit einer öffnenden Klammer ({) und enden mit einer schließenden Klammer (})
+// Schlüssel und Werte werden durch Doppelpunkte (:) getrennt
+// Schlüssel-Wert-Paare werden durch Kommas (,) getrennt
+$colors: (
+        main-color: #36ca19,
+        secondary: #ff5733,
+        text-color: #003c00);
+
+// Zugriff auf Werte in Maps
+// Zugriff erfolgt über die Funktion map-get($map, $key)
+$main-color: map-get($colors, main-color);
+
+$theme: (
+        colors: (
+                primary: #36ca19,
+                secondary: #ff5733,
+                font-size: 24px,
+                padding: 10px,
+                margin: 20px
+        ),
+        font-sizes: (
+                small: 12px,
+                medium: 16px,
+                large: 20px
+        )
+);
+//Mixin button
+@mixin button($bg-color, $text-color) {
+  background-color: $bg-color;
+  color: $text-color;
+  padding: $padding;
+  border: none;
+  border-radius: 5px;
+  text-align: center;
+}
+
+// Function to darken a color
+@function darken($color, $amount) {
+  @return mix(black, $color, $amount);
+}
+
+body {
+  background-color: map-get($colors, main-color);
+  font-size: map-get(map-get($theme, font-sizes), large);
+  padding: map-get(map-get($theme, colors), padding);
+  margin: map-get(map-get($theme, colors), margin);
+  color: map-get($colors, text-color);
+
+  .btn {
+    @include button(map-get($colors, secondary), #fff);
+
+    &:hover {
+      background-color: darken(red, 30%);
+    }
+  }
+
+  .bttest {
+    @include button(orange, black);
+
+    &:hover {
+      background-color: lighten(orange, 20%);
+    }
+  }
+
+}

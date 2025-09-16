@@ -1,0 +1,31 @@
+body {
+  background-color: #36ca19;
+  font-size: 20px;
+  padding: 10px;
+  margin: 20px;
+  color: #003c00;
+}
+body .btn {
+  background-color: #ff5733;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  text-align: center;
+}
+body .btn:hover {
+  background-color: rgb(178.5, 0, 0);
+}
+body .bttest {
+  background-color: orange;
+  color: black;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  text-align: center;
+}
+body .bttest:hover {
+  background-color: #ffc966;
+}
+
+/*# sourceMappingURL=index.css.map */
