@@ -4,6 +4,18 @@
   box-sizing: border-box;
 }
 
+:root {
+  --black: #041518;
+  --white: #d4e8ec;
+  --error: #c11721;
+  --main: #22777f;
+  --second1: #0f6171;
+  --second2: #379495;
+  --second3: #fbfcec;
+  --accent: #bdd9c5;
+  --realwhite: #fafafa;
+}
+
 @font-face {
   font-family: "OpenSans";
   src: url("./src/fonts/OpenSans.ttf") format("true-type");
@@ -52,8 +64,60 @@ small {
   font-size: 0.75rem;
 }
 
+@media (min-width: 576px) {
+  .container {
+    width: 90%;
+  }
+}
+@media (min-width: 768px) {
+  .container {
+    width: 85%;
+  }
+  html {
+    font-size: 1.1rem;
+  }
+}
+@media (min-width: 992px) {
+  html {
+    font-size: 1.125rem;
+  }
+}
+@media (min-width: 1200px) {
+  html {
+    font-size: 1.15rem;
+  }
+  .container {
+    width: 80%;
+  }
+}
+@media (min-width: 1400px) {
+  html {
+    font-size: 1.2rem;
+  }
+  .container {
+    width: 70%;
+  }
+}
+@media (min-width: 1920px) {
+  html {
+    font-size: 1.25rem;
+  }
+  .container {
+    width: 60%;
+  }
+}
+.container {
+  width: 95%;
+  padding: 0 1rem;
+  margin: 0 auto;
+  border: 3px solid red;
+}
+
 body {
-  font-family: Poppins-Light;
+  font-family: "Poppins-Regular", sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+  color: #333;
 }
 
 /*# sourceMappingURL=index.css.map */
