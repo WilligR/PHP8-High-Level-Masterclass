@@ -37,6 +37,13 @@ body header nav h6 {
 body header nav img.svg {
   height: 2em;
 }
+body header nav img.svg:hover {
+  transform: scale(1.2);
+}
+body header nav .navbar-right {
+  display: flex;
+  gap: 0.5em;
+}
 
 h1 {
   font-size: 5.61rem;

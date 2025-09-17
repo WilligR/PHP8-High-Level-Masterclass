@@ -50,8 +50,18 @@ body {
       h6 {
         font-weight: 200;
       }
-      img.svg{
+
+      img.svg {
         height: 2em;
+
+        &:hover {
+          transform: scale(1.2);
+        }
+      }
+
+      .navbar-right {
+        display: flex;
+        gap: 0.5em;
       }
     }
   }
