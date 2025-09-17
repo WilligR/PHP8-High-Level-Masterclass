@@ -43,6 +43,7 @@ body {
     nav {
       display: flex;
       justify-content: space-between;
+      align-items: center;
       background-color: $main;
       color: $white;
       padding: 0.5em 2em;
@@ -64,6 +65,33 @@ body {
         gap: 0.5em;
       }
     }
+  }
+
+  .hero-section {
+    height: 30rem;
+    background-image: url('./src/public/hero.webp');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: $white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .content-container {
+      display: flex;
+      flex-direction: column;
+      gap: 2em;
+      padding: 2rem 4rem;
+      border-radius: 1.25rem;
+      background-color: $main;
+      .text-container{
+        text-align: center;
+        h3{
+          font-weight: 200;
+        }
+      }
+   }
   }
 }
 
