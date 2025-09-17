@@ -35,6 +35,29 @@ $realwhite: #fafafa;
   src: url('./src/fonts/Poppins-Bold.ttf') format('true-type');
 }
 
+body {
+  font-family: 'OpenSans', sans-serif;
+  color: $black;
+
+  header {
+    nav {
+      display: flex;
+      justify-content: space-between;
+      background-color: $main;
+      color: $white;
+      padding: 0.5em 2em;
+
+      h6 {
+        font-weight: 200;
+      }
+      img.svg{
+        height: 2em;
+      }
+    }
+  }
+}
+
+
 // Typescale
 h1 {
   font-size: 5.61rem;
@@ -123,15 +146,4 @@ small {
   border: 3px solid red;
 }
 
-body {
-  color: $black;
-
-  header {
-    nav {
-      svg {
-        fill: $black;
-      }
-    }
-  }
-}
 

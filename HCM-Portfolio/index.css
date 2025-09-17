@@ -20,6 +20,24 @@
   font-family: "Poppins-Bold";
   src: url("./src/fonts/Poppins-Bold.ttf") format("true-type");
 }
+body {
+  font-family: "OpenSans", sans-serif;
+  color: #041518;
+}
+body header nav {
+  display: flex;
+  justify-content: space-between;
+  background-color: #22777f;
+  color: #d4e8ec;
+  padding: 0.5em 2em;
+}
+body header nav h6 {
+  font-weight: 200;
+}
+body header nav img.svg {
+  height: 2em;
+}
+
 h1 {
   font-size: 5.61rem;
 }
@@ -99,13 +117,6 @@ small {
   padding: 0 1rem;
   margin: 0 auto;
   border: 3px solid red;
-}
-
-body {
-  color: #041518;
-}
-body header nav svg {
-  fill: #041518;
 }
 
 /*# sourceMappingURL=index.css.map */
