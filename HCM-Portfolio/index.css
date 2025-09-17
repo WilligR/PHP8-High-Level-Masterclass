@@ -23,6 +23,26 @@
 body {
   font-family: "OpenSans", sans-serif;
   color: #041518;
+  /* Buttons */
+}
+body a.btn-cta {
+  display: inline-block;
+  text-align: center;
+  background-color: #d4e8ec;
+  padding: 1rem 2rem;
+  border-radius: 1.25rem;
+  color: #041518;
+  text-decoration: none;
+  transition: background-color 0.2s;
+  box-shadow: 1px 1px 2px 0 rgba(49, 85, 94, 0.64), 2px 3px 4px 0 rgba(49, 85, 94, 0.55), 5px 8px 6px 0 rgba(49, 85, 94, 0.33), 10px 14px 7px 0 rgba(49, 85, 94, 0.1), 15px 21px 7px 0 rgba(49, 85, 94, 0.01);
+}
+body a.btn-cta:hover {
+  background-color: #bdd9c5;
+}
+body a.btn-cta:active {
+  background-color: #041518;
+  color: #d4e8ec;
+  box-shadow: none;
 }
 body header nav {
   display: flex;
@@ -30,23 +50,23 @@ body header nav {
   align-items: center;
   background-color: #22777f;
   color: #d4e8ec;
-  padding: 0.5em 2em;
+  padding: 0.5rem 2rem;
 }
 body header nav h6 {
   font-weight: 200;
 }
 body header nav img.svg {
-  height: 2em;
+  height: 2rem;
 }
 body header nav img.svg:hover {
   transform: scale(1.2);
 }
 body header nav .navbar-right {
   display: flex;
-  gap: 0.5em;
+  gap: 0.5rem;
 }
 body .hero-section {
-  height: 30rem;
+  height: 50rem;
   background-image: url("./src/public/hero.webp");
   background-position: center;
   background-repeat: no-repeat;
@@ -59,16 +79,20 @@ body .hero-section {
 body .hero-section .content-container {
   display: flex;
   flex-direction: column;
-  gap: 2em;
+  gap: 2rem;
   padding: 2rem 4rem;
   border-radius: 1.25rem;
   background-color: #22777f;
+  margin: 1rem;
 }
 body .hero-section .content-container .text-container {
   text-align: center;
 }
 body .hero-section .content-container .text-container h3 {
   font-weight: 200;
+}
+body .hero-section .btn-container {
+  text-align: center;
 }
 
 h1 {
