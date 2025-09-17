@@ -58,6 +58,7 @@ body {
     &:hover {
       background-color: $accent;
     }
+
     &:active {
       background-color: $black;
       color: $white;
@@ -112,6 +113,11 @@ body {
       border-radius: 1.25rem;
       background-color: $main;
       margin: 1rem;
+      box-shadow: 3px 4px 10px 0 rgba(0, 0, 0, 0.2),
+      11px 14px 18px 0 rgba(0, 0, 0, 0.17),
+      24px 33px 24px 0 rgba(0, 0, 0, 0.1),
+      43px 58px 29px 0 rgba(0, 0, 0, 0.03), 68px 90px 32px 0 rgba(0, 0, 0, 0);
+
 
       .text-container {
         text-align: center;
@@ -131,27 +137,27 @@ body {
 
 // Typescale
 h1 {
-  font-size: 5.61rem;
+  font-size: calc(5.61rem * 0.8);
 }
 
 h2 {
-  font-size: 4.209rem;
+  font-size: calc(4.209rem * 0.8);
 }
 
 h3 {
-  font-size: 3.157rem;
+  font-size: calc(3.157rem * 0.8);
 }
 
 h4 {
-  font-size: 2.369rem;
+  font-size: calc(2.369rem * 0.8);
 }
 
 h5 {
-  font-size: 1.777rem;
+  font-size: calc(1.777rem * 0.8);
 }
 
 h6 {
-  font-size: 1.333rem;
+  font-size: calc(1.333rem * 0.8);
 }
 
 p {
@@ -169,6 +175,32 @@ small {
 }
 
 @media (min-width: 768px) {
+  body {
+    h1 {
+      font-size: 5.61rem;
+    }
+
+    h2 {
+      font-size: 4.209rem;
+    }
+
+    h3 {
+      font-size: 3.157rem;
+    }
+
+    h4 {
+      font-size: 2.369rem;
+    }
+
+    h5 {
+      font-size: 1.777rem;
+    }
+
+    h6 {
+      font-size: 1.333rem;
+    }
+
+  }
   .container {
     width: 85%;
   }

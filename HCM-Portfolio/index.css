@@ -84,6 +84,7 @@ body .hero-section .content-container {
   border-radius: 1.25rem;
   background-color: #22777f;
   margin: 1rem;
+  box-shadow: 3px 4px 10px 0 rgba(0, 0, 0, 0.2), 11px 14px 18px 0 rgba(0, 0, 0, 0.17), 24px 33px 24px 0 rgba(0, 0, 0, 0.1), 43px 58px 29px 0 rgba(0, 0, 0, 0.03), 68px 90px 32px 0 rgba(0, 0, 0, 0);
 }
 body .hero-section .content-container .text-container {
   text-align: center;
@@ -96,27 +97,27 @@ body .hero-section .btn-container {
 }
 
 h1 {
-  font-size: 5.61rem;
+  font-size: 4.488rem;
 }
 
 h2 {
-  font-size: 4.209rem;
+  font-size: 3.3672rem;
 }
 
 h3 {
-  font-size: 3.157rem;
+  font-size: 2.5256rem;
 }
 
 h4 {
-  font-size: 2.369rem;
+  font-size: 1.8952rem;
 }
 
 h5 {
-  font-size: 1.777rem;
+  font-size: 1.4216rem;
 }
 
 h6 {
-  font-size: 1.333rem;
+  font-size: 1.0664rem;
 }
 
 p {
@@ -133,6 +134,24 @@ small {
   }
 }
 @media (min-width: 768px) {
+  body h1 {
+    font-size: 5.61rem;
+  }
+  body h2 {
+    font-size: 4.209rem;
+  }
+  body h3 {
+    font-size: 3.157rem;
+  }
+  body h4 {
+    font-size: 2.369rem;
+  }
+  body h5 {
+    font-size: 1.777rem;
+  }
+  body h6 {
+    font-size: 1.333rem;
+  }
   .container {
     width: 85%;
   }
