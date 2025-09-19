@@ -95,6 +95,45 @@ body .hero-section .content-container .text-container h3 {
 body .hero-section .btn-container {
   text-align: center;
 }
+body .aboutme {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 8rem 0;
+}
+body .aboutme .cards-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+body .aboutme .cards-container .card-left, body .aboutme .cards-container .card-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 21rem;
+  height: 31rem;
+  padding: 5rem 4rem;
+}
+body .aboutme .cards-container .card-left img {
+  height: 16rem;
+  width: 16rem;
+}
+body .aboutme .cards-container .card-right {
+  text-align: justify;
+  gap: 32px;
+}
+body .aboutme .cards-container .card-right h6 {
+  font-weight: 400;
+}
+body .aboutme .cards-container .card-right {
+  background-color: #22777f;
+  color: #d4e8ec;
+  border-radius: 1.25rem;
+}
 
 h1 {
   font-size: 4.488rem;
@@ -152,6 +191,9 @@ small {
   body h6 {
     font-size: 1.333rem;
   }
+  body .aboutme .cards-container {
+    margin: 8rem;
+  }
   .container {
     width: 85%;
   }
@@ -160,6 +202,9 @@ small {
   }
 }
 @media (min-width: 992px) {
+  body .aboutme .cards-container {
+    flex-direction: row;
+  }
   html {
     font-size: 1.125rem;
   }

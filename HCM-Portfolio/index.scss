@@ -132,41 +132,11 @@ body {
       text-align: center;
     }
   }
+
+  @import "aboutme";
 }
 
-
-// Typescale
-h1 {
-  font-size: calc(5.61rem * 0.8);
-}
-
-h2 {
-  font-size: calc(4.209rem * 0.8);
-}
-
-h3 {
-  font-size: calc(3.157rem * 0.8);
-}
-
-h4 {
-  font-size: calc(2.369rem * 0.8);
-}
-
-h5 {
-  font-size: calc(1.777rem * 0.8);
-}
-
-h6 {
-  font-size: calc(1.333rem * 0.8);
-}
-
-p {
-  font-size: 1rem;
-}
-
-small {
-  font-size: 0.75rem;
-}
+@import "typescale";
 
 @media (min-width: 576px) {
   .container {
@@ -200,6 +170,11 @@ small {
       font-size: 1.333rem;
     }
 
+    .aboutme {
+      .cards-container {
+        margin: 8rem;
+      }
+    }
   }
   .container {
     width: 85%;
@@ -210,6 +185,13 @@ small {
 }
 
 @media (min-width: 992px) {
+  body {
+    .aboutme {
+      .cards-container {
+        flex-direction: row;
+      }
+    }
+  }
   html {
     font-size: 1.125rem;
   }

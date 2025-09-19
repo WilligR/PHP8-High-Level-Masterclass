@@ -1,0 +1,45 @@
+.aboutme {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 8rem 0;
+
+  .cards-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .card-left, .card-right {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: calc(28rem * 0.75);
+      height: 31rem;
+      padding: 5rem 4rem;
+    }
+
+    .card-left {
+      img {
+        height: 16rem;
+        width: 16rem;
+      }
+    }
+
+    .card-right {
+      text-align: justify;
+      gap: 32px;
+
+      h6 {
+        font-weight: 400;
+      }
+
+      background-color: $main;
+      color: $white;
+      border-radius: 1.25rem;
+    }
+  }
+}
